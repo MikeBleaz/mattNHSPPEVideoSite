@@ -1,0 +1,22 @@
+<html>
+<header><title>Are there bays on the Ward?</title></header>
+  <body>
+
+    <a href="index.html">Return to start</a><br><br>
+
+    <b>Question 2</b><br><br>
+    Are there any bays on the ward?
+    <br><br>
+    <button id="yesBaysOnWard" class="float-left submit-button" >Yes, we have bays on the ward</button>
+    <button id="noBaysOnWard" class="float-left submit-button" >No, we don't have bays on the ward</button>
+
+    <script type="text/javascript">
+        document.getElementById("yesBaysOnWard").onclick = function () {
+            location.href = "areTherePositivePressureRooms.html";
+        };
+        document.getElementById("noBaysOnWard").onclick = function () {
+            location.href = "thereAreNoBays.html";
+        };
+    </script>
+  </body>
+</html>
