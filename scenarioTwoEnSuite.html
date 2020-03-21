@@ -1,0 +1,24 @@
+<html>
+  <header>
+    <title>Are there en-suite bathrooms?</title>
+  </header>
+  <body>
+
+    <a href="index.html">Return to start</a><br><br>
+
+    <b>Question 8</b><br><br>
+    Do the side-rooms have en-suite bathrooms?
+    <br><br>
+    <button id="yesEnSuite" class="float-left submit-button" >Yes, rooms have en-suite</button>
+    <button id="noEnSuite" class="float-left submit-button" >No, rooms don't have en-suite</button>
+
+    <script type="text/javascript">
+        document.getElementById("yesEnSuite").onclick = function () {
+            location.href = "scenarioTwoVideoPage.html";
+        };
+        document.getElementById("noEnSuite").onclick = function () {
+            location.href = "ScenarioEightVideoPage.html";
+        };
+    </script>
+  </body>
+</html>

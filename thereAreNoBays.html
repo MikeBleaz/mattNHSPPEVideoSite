@@ -1,24 +1,24 @@
 <html>
-<header><title>There are no bays on the Ward.</title></header>
+<header><title>No multiple-occupancy bays on the Ward. Positive Pressure Rooms?</title></header>
   <body>
 
     <a href="index.html">Return to start</a><br><br>
 
-    There are no bays on the ward.<br><br>
-    All your patients are looked after in en-suite side rooms. If they are not, please go back and ensure the previous question was answered correctly.<br><br>
+    There are no multi-occupancy bays on the ward.<br><br>
+    All your patients are looked after in side rooms. If they are not, please go back and ensure the previous question was answered correctly.<br><br>
 
-    <b>Question 4</b><br><br>
-    Are all these side rooms normal/standard air pressure or negative air pressure or a combination of these?
+    <b>Question 6</b><br><br>
+    Are there any positive pressure rooms on your ward?
     <br><br>
-    <button id="yesSideRoomsNormalAirPressure" class="float-left submit-button" >Yes, side rooms are normal/standard air pressure</button>
-    <button id="noSideRoomsnotNormalAirPressure" class="float-left submit-button" >No, side rooms are not at normal/standard air pressure</button>
+    <button id="yesPositivePressure" class="float-left submit-button">Yes, we have positive pressure rooms</button>
+    <button id="noPositivePressure" class="float-left submit-button">No, we don't have positive pressure rooms</button>
 
     <script type="text/javascript">
-        document.getElementById("yesSideRoomsNormalAirPressure").onclick = function () {
-            location.href = "scenarioOneVideoPage.html";
-        };
-        document.getElementById("noSideRoomsnotNormalAirPressure").onclick = function () {
+        document.getElementById("yesPositivePressure").onclick = function () {
             location.href = "scenarioThreeVideoPage.html";
+        };
+        document.getElementById("noPositivePressure").onclick = function () {
+            location.href = "scenarioOneEnSuite.html";
         };
     </script>
   </body>

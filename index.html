@@ -7,20 +7,11 @@
     <br><br>
     This information will be located on the public facing page of the official CUH website at the following link (link not yet available)
     <br><br>
-    <b>Question 1</b><br><br>
-    Does the environment you work in have a safe corridor?
-    <br><br>
-    A safe corridor connects all patient rooms and can be closed to patients i.e. they do not need to use the corridor to get to a toilet or shower. This is true where all rooms or bays have en-suite facilities and are separated by door to the "safe corridor". If you are still unsure see the separate section entitled "How do I find out which clinical environment I am working in?"<br><br>
-
-    <button id="yesSafeCorridorButton" class="float-left submit-button" >Yes, we have a safe corridor</button>
-    <button id="noSafeCorridorButton" class="float-left submit-button" >No, we don't have a safe corridor </button>
+    <button id="consentButton" class="float-left submit-button" >I'm a UK Health Worker <br> or <br> a Non-UK Health Worker whose PPE guideline is aligned with Public Health England (PHE)</button>
 
     <script type="text/javascript">
-        document.getElementById("yesSafeCorridorButton").onclick = function () {
-            location.href = "areThereBays.html";
-        };
-        document.getElementById("noSafeCorridorButton").onclick = function () {
-            location.href = "scenarioThreeVideoPage.html";
+        document.getElementById("consentButton").onclick = function () {
+            location.href = "primaryOrSecondary.html";
         };
     </script>
 </html>

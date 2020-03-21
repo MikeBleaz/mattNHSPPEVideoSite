@@ -1,0 +1,25 @@
+<html>
+  <header>
+    <title>Seconary Care: Are you in a ward, Emergency or Out-Patients?</title>
+  </header>
+  <body>
+    <b>Question 2</b><br><br>
+    Are you on a hospital ward, emergency or in Out-Patients?
+    <br><br>
+
+    <button id="inWardButton" class="float-left submit-button" >We're on a Ward</button>
+    <button id="emergencyButton" class="float-left submit-button" >We're in Emergency</button>
+    <button id="inOutPatientsButton" class="float-left submit-button" >We're in Out-Patients</button>
+
+    <script type="text/javascript">
+        document.getElementById("inWardButton").onclick = function () {
+            location.href = "hasSafeCorridor.html";
+        };
+        document.getElementById("emergencyButton").onclick = function () {
+            location.href = "scenarioSixVideoPage.html";
+        };
+        document.getElementById("inOutPatientsButton").onclick = function () {
+            location.href = "scenarioFiveVideoPage.html";
+        };
+    </script>
+</html>
