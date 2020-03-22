@@ -23,69 +23,91 @@
 
     <h1>Scenario 1 Video: Hospital Ward, with Safe Corridor, No multi-occupancy bays, side rooms (no +ve pressure), all have en-suite</h1>
 
-    <iframe style="border: 0; width: 60%; height: 60%"
-      src="https://www.youtube.com/embed/ItcvIYtEVrw">
-      Sorry. Your browser doesn't support iFrames.
-    </iframe>
+    <a name="iframe"></a>
+    <div id="player"></div>
+
+    <script>
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      
+      var player;
+      var ytSeconds;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '100%',
+          width: '100%',
+          videoId: 'ItcvIYtEVrw',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+      
+            function onPlayerStateChange(e) {
+              if (e.data == 1 && ytSeconds > 0) {
+    e.target.seekTo(ytSeconds);
+    ytSeconds = 0;
+  }
+            }
+
+            // 4. The API will call this function when the video player is ready.
+            function onPlayerReady(event) {
+              event.target.playVideo();
+            }
+      
+      
+function seekTo(seconds)
+{
+  if (player.getPlayerState() == 1) {
+    player.seekTo(seconds);
+  }
+  else {
+    ytSeconds = seconds;
+    player.playVideo();
+  }
+}
+          </script>
 
     <ol>
-      <li>...wash hands</li> 
-    <iframe style="border: 0; width: 60%; height: 60%"
-       src="https://www.youtube.com/embed/ItcvIYtEVrw?start=25&end=34">
-    Sorry. Your browser doesn't support iFrames.
-     </iframe>
-     
-      <li>...put on a plastic apron</li>
-      <iframe style="border: 0; width: 60%; height: 60%"
-       src="https://www.youtube.com/embed/ItcvIYtEVrw?start=34&end=46">
-    Sorry. Your browser doesn't support iFrames.
-     </iframe>
-      <li>...put on a fluid resistant surgical face mask</li>
-      <iframe style="border: 0; width: 60%; height: 60%"
-       src="https://www.youtube.com/embed/ItcvIYtEVrw?start=46&end=70">
-    Sorry. Your browser doesn't support iFrames.
-     </iframe>
-      <li>...put on eye protection and gloves</li>
-      <iframe style="border: 0; width: 60%; height: 60%"
-       src="https://www.youtube.com/embed/ItcvIYtEVrw?start=71&end=92">
-    Sorry. Your browser doesn't support iFrames.
-     </iframe>
-      <li>...take off gloves safely</li>
-      <iframe style="border: 0; width: 60%; height: 60%"
-       src="https://www.youtube.com/embed/ItcvIYtEVrw?start=98&end=122">
-    Sorry. Your browser doesn't support iFrames.
-     </iframe>
-      <li>...take off apron safely</li>
-      <iframe style="border: 0; width: 60%; height: 60%"
-       src="https://www.youtube.com/embed/ItcvIYtEVrw?start=122&end=142">
-    Sorry. Your browser doesn't support iFrames.
-     </iframe>
-      <li>...leave room safely</li>
-      <iframe style="border: 0; width: 60%; height: 60%"
-       src="https://www.youtube.com/embed/ItcvIYtEVrw?start=142&end=146">
-    Sorry. Your browser doesn't support iFrames.
-     </iframe>
-      <li>...take off eye protetion safely</li>
-      <iframe style="border: 0; width: 60%; height: 60%"
-       src="https://www.youtube.com/embed/ItcvIYtEVrw?start=146&end=170">
-    Sorry. Your browser doesn't support iFrames.
-     </iframe>
-      <li>...clean eye protection</li>
-      <iframe style="border: 0; width: 60%; height: 60%"
-       src="https://www.youtube.com/embed/ItcvIYtEVrw?start=170&end=184">
-    Sorry. Your browser doesn't support iFrames.
-     </iframe>
-      <li>...remove face mask safely</li>
-      <iframe style="border: 0; width: 60%; height: 60%"
-       src="https://www.youtube.com/embed/ItcvIYtEVrw?start=184&end=205">
-    Sorry. Your browser doesn't support iFrames.
-     </iframe>
-      <li>...clean stethoscope</li>
-      <iframe style="border: 0; width: 60%; height: 60%"
-       src="https://www.youtube.com/embed/ItcvIYtEVrw?start=205&end=218">
-    Sorry. Your browser doesn't support iFrames.
-     </iframe>
+      <li>...wash hands
+        <a href="#iframe" onclick="seekTo(25);">(link)</a>
+      </li> 
+      <li>...put on a plastic apron
+        <a href="#iframe" onclick="seekTo(34);">(link)</a>
+      </li>
+      <li>...put on a fluid resistant surgical face mask
+        <a href="#iframe" onclick="seekTo(46);">(link)</a>
+      </li>
+      <li>...put on eye protection and gloves
+        <a href="#iframe" onclick="seekTo(71);">(link)</a>
+      </li>
+      <li>...take off gloves safely
+        <a href="#iframe" onclick="seekTo(98);">(link)</a>
+      </li>
+      <li>...take off apron safely
+        <a href="#iframe" onclick="seekTo(122);">(link)</a>
+      </li>
+      <li>...leave room safely
+        <a href="#iframe" onclick="seekTo(142);">(link)</a>
+      </li>
+      <li>...take off eye protection safely
+        <a href="#iframe" onclick="seekTo(146);">(link)</a>
+      </li>
+      <li>...clean eye protection
+        <a href="#iframe" onclick="seekTo(170);">(link)</a>
+      </li>
+      <li>...remove face mask safely
+        <a href="#iframe" onclick="seekTo(184);">(link)</a>
+      </li>
+      <li>...clean stethoscope
+        <a href="#iframe" onclick="seekTo(205);">(link)</a>
+      </li>
     </ol>
+
 
   </body>
 </html>
