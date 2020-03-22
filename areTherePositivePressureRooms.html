@@ -1,18 +1,33 @@
 <html>
-  
-  <head>
-    <link rel="stylesheet" href="styles.css">
+<head>
+  <title>Are There Positive Pressure Rooms</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-<header><title>Are there positive pressure rooms on your multiple-occupancy bay ward?</title></header>
-  <body>
 
-    <a href="index.html">Return to start</a><br><br>
+<header>
+  <div class="container">
+  <div class="jumbotron header-banner">
+	<img src="images/nhs-logo.png" alt="NHS-Logo'">
+    <h1>NHS PPE Guidance</h1>      
+  </div>
+  </div>
+</header>
 
-    <b>Question 5</b><br><br>
+
+<body>
+	<h2>Question 5</h2>  
+	<h1>Are there positive pressure rooms on your multiple-occupancy bay ward?</h1>
+   <br><br>
+<div class="col-sm-12 text-center">    
     Are there any positive pressure rooms on your ward?
     <br><Br>
-    <button id="yesPositivePressure" class="float-left submit-button">Yes, we positive have pressure rooms</button>
-    <button id="noPositivePressure" class="float-left submit-button">No, we don't have positive pressure rooms</button>
+    <button id="yesPositivePressure" class="btn btn-primary btn-lg submit-button">Yes, we positive have pressure rooms</button>
+    <button id="noPositivePressure" class="btn btn-primary btn-lg submit-button">No, we don't have positive pressure rooms</button>
 
     <script type="text/javascript">
         document.getElementById("yesPositivePressure").onclick = function () {
@@ -21,6 +36,9 @@
         document.getElementById("noPositivePressure").onclick = function () {
             location.href = "scenarioTwoEnSuite.html";
         };
-    </script>
+   </script>
+	    <br><br>
+	   <a href="index.html">Return to start</a><br><br>
+	</div>
   </body>
 </html>

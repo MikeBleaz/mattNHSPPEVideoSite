@@ -1,21 +1,30 @@
 <html>
-  
-  <head>
-    <link rel="stylesheet" href="styles.css">
+<head>
+  <title>Are There Bays</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-  <header>
-    <title>Are there multiple-occupancy bays on the ward?</title>
-  </header>
-  <body>
 
-    <a href="index.html">Return to start</a><br><br>
+<header>
+  <div class="container">
+  <div class="jumbotron header-banner">
+	<img src="images/nhs-logo.png" alt="NHS-Logo'">
+    <h1>NHS PPE Guidance</h1>      
+  </div>
+  </div>
+</header>
 
-    <b>Question 4</b><br><br>
-    Are there any multiple-occupancy bays on the ward?
-    <br><br>
-    <button id="yesBaysOnWard" class="float-left submit-button" >Yes, we have multiple-occuancy bays</button>
-    <button id="noBaysOnWard" class="float-left submit-button" >No, we don't have multiple-occupancy bays</button>
-
+<body>
+ <h2>Question 4</h2>
+ <h1>Are there multiple-occupancy bays on the ward?</h1> 
+ <br><br>
+<div class="col-sm-12 text-center"> 
+    <button id="yesBaysOnWard" class="btn btn-primary btn-lg submit-button" >Yes, we have multiple-occuancy bays</button>
+    <button id="noBaysOnWard" class="btn btn-primary btn-lg submit-button" >No, we don't have multiple-occupancy bays</button>
     <script type="text/javascript">
         document.getElementById("yesBaysOnWard").onclick = function () {
             location.href = "areTherePositivePressureRooms.html";
@@ -24,5 +33,8 @@
             location.href = "thereAreNoBays.html";
         };
     </script>
+	    <br><br>
+	   <a href="index.html">Return to start</a><br><br>
+	</div>
   </body>
 </html>

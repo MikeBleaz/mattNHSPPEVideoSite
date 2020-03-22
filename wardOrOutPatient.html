@@ -1,19 +1,32 @@
 <html>
-    
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-  <header>
-    <title>Seconary Care: Are you in a ward, Emergency or Out-Patients?</title>
-  </header>
+
+  <head>
+  <title>Seconary Care: Are you in a ward, Emergency or Out-Patients?</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<header>
+  <div class="container">
+  <div class="jumbotron header-banner">
+	<img src="images/nhs-logo.png" alt="NHS-Logo'">
+    <h1>NHS PPE Guidance</h1>      
+  </div>
+  </div>
+</header>
   <body>
-    <b>Question 2</b><br><br>
-    Are you on a hospital ward, emergency or in Out-Patients?
+    <h2>Question 2</h2>
+    <h1>Are you on a hospital ward, emergency or in Out-Patients?</h1>
     <br><br>
 
-    <button id="inWardButton" class="float-left submit-button" >We're on a Ward</button>
-    <button id="emergencyButton" class="float-left submit-button" >We're in Emergency</button>
-    <button id="inOutPatientsButton" class="float-left submit-button" >We're in Out-Patients</button>
+<div class="col-sm-12 text-center"> 
+    <button id="inWardButton" class="btn btn-primary btn-lg submit-button" >We're on a Ward</button>
+    <button id="emergencyButton" class="btn btn-primary btn-lg submit-button" >We're in Emergency</button>
+    <button id="inOutPatientsButton" class="btn btn-primary btn-lg submit-button" >We're in Out-Patients</button>
 
     <script type="text/javascript">
         document.getElementById("inWardButton").onclick = function () {
@@ -25,5 +38,9 @@
         document.getElementById("inOutPatientsButton").onclick = function () {
             location.href = "scenarioFiveVideoPage.html";
         };
-    </script>
+     </script>
+	    <br><br>
+	   <a href="index.html">Return to start</a><br><br>
+	</div>
+  </body>
 </html>
