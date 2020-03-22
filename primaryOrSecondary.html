@@ -1,17 +1,30 @@
 <html>
-  
-  <head>
-    <link rel="stylesheet" href="styles.css">
+<head>
+  <title>Primary or Secondary Care</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-  <header>
-    <title>Primary or Secondary Care</title>
-  </header>
+
+<header>
+  <div class="container">
+  <div class="jumbotron header-banner">
+	<img src="images/nhs-logo.png" alt="NHS-Logo'">
+    <h1>NHS PPE Guidance</h1>      
+  </div>
+  </div>
+</header>
+
   <body>
-    <b>Question 1</b><br><br>
-    Are you Primary Care (GP) or Secondary Care (Hospital)?
+    <h2>Question 1</h2>
+   <h1> Are you Primary Care (GP) or Secondary Care (Hospital)? </h1>
     <br><br>
-    <button id="primaryCareButton" class="float-left submit-button" >We're Primary Care</button>
-    <button id="secondaryCareButton" class="float-left submit-button" >We're Secondary Care</button>
+	<div class="col-sm-12 text-center"> 
+    <button id="primaryCareButton" class="btn btn-primary btn-lg submit-button" >We're Primary Care</button>
+    <button id="secondaryCareButton" class="btn btn-primary btn-lg submit-button" >We're Secondary Care</button>
 
     <script type="text/javascript">
         document.getElementById("primaryCareButton").onclick = function () {
@@ -21,4 +34,5 @@
             location.href = "wardOrOutPatient.html";
         };
     </script>
+	</div>
 </html>
