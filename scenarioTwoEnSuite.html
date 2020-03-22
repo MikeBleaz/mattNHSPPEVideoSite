@@ -1,28 +1,42 @@
 <html>
-  
-  <head>
-    <link rel="stylesheet" href="styles.css">
+
+<head>
+  <title>Are there en-suite bathrooms?</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-  <header>
-    <title>Are there en-suite bathrooms?</title>
-  </header>
-  <body>
 
-    <a href="index.html">Return to start</a><br><br>
+<header>
+  <div class="container">
+    <div class="jumbotron header-banner">
+      <img src="images/nhs-logo.png" alt="NHS-Logo'">
+      <h1>NHS PPE Guidance</h1>
+    </div>
+  </div>
+</header>
 
-    <b>Question 8</b><br><br>
-    Do the side-rooms have en-suite bathrooms?
-    <br><br>
-    <button id="yesEnSuite" class="float-left submit-button" >Yes, rooms have en-suite</button>
-    <button id="noEnSuite" class="float-left submit-button" >No, rooms don't have en-suite</button>
+    <h1>Do the side-rooms or multiple-occupancy rooms have en-suite bathrooms?</h1>
+    <br>
+    <br>
 
-    <script type="text/javascript">
-        document.getElementById("yesEnSuite").onclick = function () {
-            location.href = "scenarioTwoVideoPage.html";
-        };
-        document.getElementById("noEnSuite").onclick = function () {
-            location.href = "ScenarioEightVideoPage.html";
-        };
-    </script>
+    <div class="col-sm-12 text-center">
+      <button id="yesEnSuite" class="btn btn-primary btn-lg submit-button" >Yes, rooms have en-suite</button>
+      <button id="noEnSuite" class="btn btn-primary btn-lg submit-button" >No, rooms don't have en-suite</button>
+
+      <script type="text/javascript">
+          document.getElementById("yesEnSuite").onclick = function () {
+              location.href = "scenarioTwoVideoPage.html";
+          };
+          document.getElementById("noEnSuite").onclick = function () {
+              location.href = "ScenarioEightVideoPage.html";
+          };
+      </script>
+    	<br><br>
+    	<a href="index.html">Return to start</a><br><br>
+    	</div>
   </body>
 </html>
