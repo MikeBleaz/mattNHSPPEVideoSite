@@ -26,3 +26,20 @@ p {
 	background-color: #005eb8;
 
 }
+
+.navbar-inverse {
+    background-color: #005eb8;
+    border-color: #005eb8;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #ffffff;
+}
+
+.steps {
+  font-size: 140%;
+}
+
+.steps li {
+  padding: 2px;
+}
