@@ -4,10 +4,9 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 var ytSeconds;
+
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
-    height: '100%',
-    width: '100%',
     videoId: videoId,
     events: {
       'onStateChange': onPlayerStateChange
@@ -21,7 +20,6 @@ function onPlayerStateChange(e) {
     ytSeconds = 0;
   }
 }
-
 
 function seekTo(seconds)
 {

@@ -26,3 +26,11 @@ p {
 	background-color: #005eb8;
 
 }
+
+.steps {
+  font-size: 140%;
+}
+
+.steps li {
+  padding: 2px;
+}
