@@ -43,3 +43,11 @@ p {
 .steps li {
   padding: 4px;
 }
+
+.steps {
+  list-style: none;
+}
+
+.steps li:before {
+  content: '🗹';
+}
