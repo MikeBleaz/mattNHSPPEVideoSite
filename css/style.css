@@ -1,0 +1,27 @@
+/*style.css */
+body {
+ color: #000000;
+ font-family: Frutiger W01,Arial,Sans-serif;
+}
+h1 {
+ color: #000000;
+ text-align: center;
+}
+
+h2 {
+ color: #000000;
+ text-align: center;
+}
+
+p {
+ color: #000000;
+ text-align: left;
+}
+.jumbotron {
+	background-color: #005eb8;
+    color: #ffffff;
+}
+
+.btn-lg  {
+	background-color: #005eb8;
+}
