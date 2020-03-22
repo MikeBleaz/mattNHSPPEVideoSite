@@ -27,6 +27,15 @@ p {
 
 }
 
+.navbar-inverse {
+    background-color: #005eb8;
+    border-color: #005eb8;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #ffffff;
+}
+
 .steps {
   font-size: 140%;
 }
