@@ -50,4 +50,5 @@ p {
 
 .steps li:before {
   content: '🗹';
+  color: green
 }
