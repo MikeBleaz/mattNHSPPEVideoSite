@@ -44,6 +44,32 @@ p {
   padding: 4px;
 }
 
+.logo-centre {
+	text-align: center;
+}
+
+.date-time-format
+{
+	text-align: center;
+	color: #ffffff;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  margin-top: 20px; 
+  bottom:0;
+  width: 100%;
+  background-color: #005eb8;
+  color: white;
+  text-align: center;
+}
+
+.footer-checkbox {
+	content: '🗹';
+    color: green;
+}
+
 .steps {
   list-style: none;
 }
