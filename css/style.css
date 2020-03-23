@@ -3,6 +3,13 @@ body {
  color: #000000;
  font-family: Frutiger W01,Arial,Sans-serif;
 }
+
+body {
+  min-height: 400px;
+  margin-bottom: 100px;
+  clear: both;
+}
+
 h1 {
  color: #000000;
  text-align: center;
