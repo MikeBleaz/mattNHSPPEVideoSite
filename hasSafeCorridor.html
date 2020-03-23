@@ -23,12 +23,22 @@
 
 <div class="col-sm-12 text-left">
   <br>
-  <font color="green">Safe corridor</font>: a corridor that connects all the patient rooms and can be closed to patients:
+  <font color="green">Safe corridor</font>: To be a safe corridor, it must have the following:
   <br>
   <ul style="list-style-type:disc;">
-    <li>All the single occupancy or multi-occupancy rooms have an en-suite toilet and shower. So, patients do not need to use the corridor to get to the toilet or shower</li>
-    <li>The single occupancy or multi-occupancy rooms are separated from the corridor by a door.</li>
+    <li>A corridor that connects all the patient rooms and can be closed to patients.</li>
+    <li>All the single occupancy or multi-occupancy rooms must have an en-suite toilet and shower. So, patients do not need to use the corridor to get to the toilet or shower.</li>
+    <li>The single occupancy or multi-occupancy rooms must be separated from the corridor by a door.</li>
   </ul>
+
+
+
+</div>
+
+<div class="col-sm-12 text-center">
+  <br>
+  If you are not sure, please speak to your supervisor.
+  <br>
   <br>
 </div>
 
@@ -36,7 +46,6 @@
 
     <button id="yesSafeCorridorButton" class="btn btn-primary btn-lg submit-button" >Yes</button>
     <button id="noSafeCorridorButton" class="btn btn-primary btn-lg submit-button" >No</button>
-    <button id="notSureButton" class="btn btn-primary btn-lg submit-button" >I'm not sure</button>
 
     <script type="text/javascript">
         document.getElementById("yesSafeCorridorButton").onclick = function () {
@@ -45,11 +54,9 @@
         document.getElementById("noSafeCorridorButton").onclick = function () {
             location.href = "scenarioThreeVideoPage.html";
         };
-        document.getElementById("notSureButton").onclick = function () {
-            location.href = "wardSchematic.html";
-        };
-        </script>
-	    <br><br>
+     </script>
+	   <br>
+     <br>
 	   <a href="index.html">Return to start</a><br><br>
 	</div>
 	

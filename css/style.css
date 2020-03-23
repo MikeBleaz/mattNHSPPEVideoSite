@@ -41,7 +41,7 @@ p {
 }
 
 .steps li {
-  padding: 2px;
+  padding: 4px;
 }
 
 .logo-centre {
@@ -68,4 +68,13 @@ p {
 .footer-checkbox {
 	content: '🗹';
     color: green;
+}
+
+.steps {
+  list-style: none;
+}
+
+.steps li:before {
+  content: '🗹';
+  color: green
 }
