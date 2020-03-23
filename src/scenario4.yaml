@@ -1,0 +1,16 @@
+scenario_number: 4
+title: Primary Care (GPs)
+video_id: Ziso8J9ffGg
+steps: [
+  { seek_to: 25, instruction: "Wash hands" },
+  { seek_to: 34, instruction: "Don a plastic apron" },
+  { seek_to: 46, instruction: "Put on a fluid resistant surgical face mask" },
+  { seek_to: 71, instruction: "Put on eye protection and gloves" },
+  { seek_to: 98, instruction: "Take off gloves safely" },
+  { seek_to: 122, instruction: "Take off apron safely" },
+  { seek_to: 142, instruction: "Leave room safely" },
+  { seek_to: 146, instruction: "Take off eye protection safely" },
+  { seek_to: 170, instruction: "Clean eye protection" },
+  { seek_to: 184, instruction: "Remove face mask safely" },
+  { seek_to: 205, instruction: "Clean stethoscope" },
+]
