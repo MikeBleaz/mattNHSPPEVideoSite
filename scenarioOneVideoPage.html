@@ -12,7 +12,7 @@
 
 <nav class="navbar navbar-inverse">
     <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">NHS Covid-19/SARS-CoV2 PPE Guidance</a> 
+      <a class="navbar-brand" href="index.html">NHS Covid-19/SARS-CoV2 PPE Guidance</a>
   </div>
 </nav>
 
@@ -20,13 +20,15 @@
 
   <body>
 
-    <h1>Scenario 1 Video:</h1> 
+    <h1>Scenario 1 Video:</h1>
 	<h1>Hospital Ward, with Safe Corridor, No multi-occupancy bays, side rooms (no +ve pressure), all have en-suite</h1>
 
-    <a name="iframe"></a>
-    <div id="player"></div>
-    <script>var videoId = 'ItcvIYtEVrw'</script>
-    <script src="js/video.js"></script>
+    <div class="col-sm-12 text-center">
+      <a name="iframe"></a>
+      <div id="player"></div>
+      <script>var videoId = 'ItcvIYtEVrw'</script>
+      <script src="js/video.js"></script>
+    </div>
 
     <div class="col-sm-12 text-center">
     <br></br>
@@ -36,7 +38,7 @@
     <ol class="steps">
       <li>
         <a href="#iframe" onclick="seekTo(25);">Wash hands</a>
-      </li> 
+      </li>
       <li>
         <a href="#iframe" onclick="seekTo(34);">Don a plastic apron</a>
       </li>
@@ -68,17 +70,17 @@
         <a href="#iframe" onclick="seekTo(205);">Clean stethoscope</a>
       </li>
     </ol>
-	
-	<p>&nbsp;</p><p>&nbsp;><p>&nbsp;</p><div class="footer date-time-format">
+
+	<p>&nbsp;</p><p>&nbsp;<p>&nbsp;</p><div class="footer date-time-format">
   <b class= "footer-checkbox steps"> 🗹 </b> this website has been checked as of <b class="date-time-format" id="date"></b> <b>by Dr Matt Butler, CUH NHS FT</b>  and remains reflective of the latest Public Health England (PHE) guidance with respect to Personal Protective Equipment (PPE)
 </div>
-	
+
 </div>
 <script>
 var d = new Date();
 document.getElementById("date").innerHTML = d;
 </script>
-	
+
 
 
   </body>

@@ -1,8 +1,6 @@
 <html>
-<html>
-
   <head>
-   <title>Ward Diagrams to help you decide if you have a Safe Corridor</title>
+    <title>Are there en-suite bathrooms?</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"  />
@@ -13,24 +11,33 @@
 
 <header>
   <div class="container">
-  <div class="jumbotron header-banner">
-	<img src="images/nhs-logo.png" alt="NHS-Logo'">
+    <div class="jumbotron header-banner">
+      <img src="images/nhs-logo.png" alt="NHS-Logo'">
     <h1>NHS Covid-19/SARS-CoV2 PPE Guidance</h1>
-  </div>
+    </div>
   </div>
 </header>
 
-  <body>
-  <div class="col-sm-12 text-center">
-    <b>Typical Ward Diagrams to help you decide if you have a Safe Corridor</b><br><br>
+    <h1>Do the side-rooms have en-suite bathrooms?</h1>
+    <br>
+    <br>
 
-    We'll add the Ward Diagrams in here when ready.
+    <div class="col-sm-12 text-center">
+      <button id="yesEnSuite" class="btn btn-primary btn-lg submit-button" >Yes</button>
+      <button id="noEnSuite" class="btn btn-primary btn-lg submit-button" >No</button>
 
- <br><br>
-    <a href="hasSafeCorridor.html">Return to Questions.</a><br><br>
-	</div>
-	
-	<p>&nbsp;</p><p>&nbsp;><p>&nbsp;</p><div class="footer date-time-format">
+      <script type="text/javascript">
+          document.getElementById("yesEnSuite").onclick = function () {
+              location.href = "scenarioOneVideoPage.html";
+          };
+          document.getElementById("noEnSuite").onclick = function () {
+              location.href = "scenarioSevenVideoPage.html";
+          };
+      </script>
+    	<br><br>
+    	<a href="index.html">Return to start</a><br><br>
+    	</div>
+<p>&nbsp;</p><p>&nbsp;<p>&nbsp;</p><div class="footer date-time-format">
   <b class= "footer-checkbox steps"> 🗹 </b> this website has been checked as of <b class="date-time-format" id="date"></b> <b>by Dr Matt Butler, CUH NHS FT</b>  and remains reflective of the latest Public Health England (PHE) guidance with respect to Personal Protective Equipment (PPE)
 </div>
 	
@@ -40,6 +47,6 @@ var d = new Date();
 document.getElementById("date").innerHTML = d;
 </script>
 	
-	
-  <body>
+		
+  </body>
 </html>
