@@ -1,5 +1,5 @@
 scenario_number: 1
-title: Hospital Ward, Safe Corridor, No multiple-occupany bays on ward, no rooms with +ve pressure, all rooms with en-suite
+title: Hospital Ward, Safe Corridor, No multiple-occupancy bays on ward, no rooms with +ve pressure, all rooms with en-suite
 video_id: ItcvIYtEVrw
 steps: [
   { seek_to: 25, instruction: "Wash hands" },
