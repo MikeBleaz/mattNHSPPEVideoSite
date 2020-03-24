@@ -2,6 +2,7 @@ scenario_number: 6
 title: Emergency Care
 video_id: -OtisyuXsD8
 steps: [
+  # Moving Around the Emergency Department and Exiting 3:50
   # Hand hygiene: 1.03
   # Donning prior to entering bay or side room1.11
   # Don plastic apron: 1:25
@@ -12,6 +13,7 @@ steps: [
   # Doffing following each patient examination: 3.09
   # Don a new set of apron and gloves after each patient 3:22
   # Once round in bay is completed 3:37
+  { seek_to: 230, class: "prominent", instruction: "Moving Around the Emergency Department and Exiting"},
   { seek_to: 63, instruction: "Hand hygiene" },
   { seek_to: 71, instruction: "Donning prior to entering a bay or side room" },
   { seek_to: 85, instruction: "Don a plastic apron" },

@@ -78,3 +78,8 @@ p {
   content: '🗹';
   color: green
 }
+
+.prominent {
+  font-size: 170%;
+  font-weight: bold;
+}

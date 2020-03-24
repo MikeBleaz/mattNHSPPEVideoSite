@@ -12,6 +12,7 @@ steps: [
   # Doffing following each patient examination: 2:50
   # Don a new set of apron and gloves after each patient 3:04
   # Once round in bay is completed 3:19
+  { seek_to: 219, class: "prominent", instruction: "Moving in the unsafe corridor and exiting the ward" },
   { seek_to: 45, instruction: "Hand hygiene" },
   { seek_to: 56, instruction: "Donning prior to entering a bay or side room" },
   { seek_to: 69, instruction: "Don a plastic apron" },
