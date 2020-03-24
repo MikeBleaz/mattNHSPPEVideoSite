@@ -2,15 +2,36 @@ scenario_number: 2
 title: Hospital Ward, Safe Corridor, multiple-occupany bays on ward, no rooms with +ve pressure, all rooms with en-suite
 video_id: 5GGDGHuQw5o
 steps: [
-  { seek_to: 25, instruction: "Wash hands" },
+  # Donning PPE
+  # 00:36 wash hands
+  # 00:56 don plastic apron
+  # 01:03 put on a fluid resistant surgical face mask
+  # 01:29 put on eye protection and gloves
+  # Doffing PPE (following each patient examination or care)
+  # 02:39 remove gloves safely
+  # 02:45 wash hands
+  # 02:49 take off apron safely
+  # Donning PPE (before each patient examination or care)
+  # 02:53 Don new set of apron and gloves
+  # Doffing PPE (once round complete)
+  # 03:09 remove gloves
+  # 03:12 wash hands
+  # 03:14 remove apron and alcohol gel (before and after leaving bay)
+  # 03:21 remove eye protection
+  # 03:25 clean eye protection
+  # 03:32 remove face mask and wash hands
+  { seek_to: 36, instruction: "Wash hands" },
   { seek_to: 34, instruction: "Don a plastic apron" },
-  { seek_to: 46, instruction: "Put on a fluid resistant surgical face mask" },
-  { seek_to: 71, instruction: "Put on eye protection and gloves" },
-  { seek_to: 98, instruction: "Take off gloves safely" },
-  { seek_to: 122, instruction: "Take off apron safely" },
-  { seek_to: 142, instruction: "Leave room safely" },
-  { seek_to: 146, instruction: "Take off eye protection safely" },
-  { seek_to: 170, instruction: "Clean eye protection" },
-  { seek_to: 184, instruction: "Remove face mask safely" },
-  { seek_to: 205, instruction: "Clean stethoscope" },
+  { seek_to: 63, instruction: "Put on a fluid resistant surgical face mask" },
+  { seek_to: 89, instruction: "Put on eye protection and gloves" },
+  { seek_to: 159, instruction: "Remove gloves safely" },
+  { seek_to: 165, instruction: "Wash hands" },
+  { seek_to: 169, instruction: "Take off apron safely" },
+  { seek_to: 173, instruction: "Don new set of apron and gloves" },
+  { seek_to: 189, instruction: "Remove gloves" },
+  { seek_to: 192, instruction: "Wash hands" },
+  { seek_to: 194, instruction: "Remove apron and alcohol gel" },
+  { seek_to: 201, instruction: "Remove eye protection" },
+  { seek_to: 205, instruction: "Clean eye protection" },
+  { seek_to: 212, instruction: "Remove face mask and wash hands" },
 ]

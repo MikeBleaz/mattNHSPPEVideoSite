@@ -2,12 +2,23 @@ scenario_number: 4
 title: Primary Care (GPs)
 video_id: Ziso8J9ffGg
 steps: [
+  # CONTENTS Donning PPE 
+  # 00:24 ... Wash hands
+  # 00:33 ... Don plastic apron
+  # 00:45 ... Put on a fluid resistant surgical face mask
+  # 01:10 ... Put on eye protection
+  # Doffing PPE
+  # 02:01 ... Remove gloves
+  # 02:26 ... Remove apron safely
+  # 02:42 ... Leave room safely
+  # 02:48 ... Remove eye protection
+
   { seek_to: 24, instruction: "Wash hands" },
   { seek_to: 33, instruction: "Don a plastic apron" },
   { seek_to: 45, instruction: "Put on a fluid resistant surgical face mask" },
-  { seek_to: 70, instruction: "Put on face shield and goggles" },
-  { seek_to: 120, instruction: "Remove gloves safely" },
+  { seek_to: 70, instruction: "Put on eye protection" },
+  { seek_to: 121, instruction: "Remove gloves" },
   { seek_to: 146, instruction: "Remove apron safely" },
   { seek_to: 162, instruction: "Leave room safely" },
-  { seek_to: 168, instruction: "Take off eye protection safely" },
+  { seek_to: 168, instruction: "Remove eye protection safely" },
 ]
