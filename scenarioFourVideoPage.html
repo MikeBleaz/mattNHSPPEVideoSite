@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Scenario Four: Primary Care (GPs)</title>
+    <title>Scenario 4: Primary Care (GPs)</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"  />
@@ -23,8 +23,8 @@
     <h1>Scenario 4 Video:</h1>
 	<h1>Primary Care (GPs)</h1>
 
+    <a name="iframe"></a>
     <div class="col-sm-12 text-center">
-      <a name="iframe"></a>
       <div id="player"></div>
       <script>var videoId = 'Ziso8J9ffGg'</script>
       <script src="js/video.js"></script>
@@ -46,10 +46,10 @@
         <a href="#iframe" onclick="seekTo(45);">Put on a fluid resistant surgical face mask</a>
       </li>
       <li>
-        <a href="#iframe" onclick="seekTo(70);">Put on face shield and goggles</a>
+        <a href="#iframe" onclick="seekTo(70);">Put on eye protection</a>
       </li>
       <li>
-        <a href="#iframe" onclick="seekTo(120);">Remove gloves safely</a>
+        <a href="#iframe" onclick="seekTo(121);">Remove gloves</a>
       </li>
       <li>
         <a href="#iframe" onclick="seekTo(146);">Remove apron safely</a>
@@ -58,8 +58,21 @@
         <a href="#iframe" onclick="seekTo(162);">Leave room safely</a>
       </li>
       <li>
-        <a href="#iframe" onclick="seekTo(168);">Take off eye protection safely</a>
+        <a href="#iframe" onclick="seekTo(168);">Remove eye protection safely</a>
       </li>
     </ol>
+
+	<p>&nbsp;</p><p>&nbsp;<p>&nbsp;</p><div class="footer date-time-format">
+  <b class= "footer-checkbox steps"> 🗹 </b> this website has been checked as of <b class="date-time-format" id="date"></b> <b>by Dr Matt Butler, CUH NHS FT</b>  and remains reflective of the latest Public Health England (PHE) guidance with respect to Personal Protective Equipment (PPE)
+</div>
+
+</div>
+<script>
+var d = new Date();
+document.getElementById("date").innerHTML = d;
+</script>
+
+
+
   </body>
 </html>
