@@ -1,0 +1,29 @@
+scenario_number: 5
+title: Out-Patient care
+video_id: C79M6khVxq4
+steps: [
+  # CONTENTS Donning PPE
+  # 00:24 ... Wash hands
+  # 00:32 ... Put on plastic apron plastic apron
+  # 00:45 ... Put on a fluid resistant surgical face mask
+  # 01:10 ... Put on eye protection and gloves
+  # 01:29 ... Time in high-risk zone
+  # Doffing PPE
+  # 02:00 ... Take off gloves
+  # 02:25 ... Take off apron safely
+  # 02:42 ... Leave room safely
+  # 02:48 ... Take off eye protection
+  # 03:00 ... Clean eye protection
+  # 03:07 ... Take off face mask safely
+  { seek_to: 24, instruction: "Wash hands" },
+  { seek_to: 32, instruction: "Put on a plastic apron" },
+  { seek_to: 45, instruction: "Put on a fluid resistant surgical face mask" },
+  { seek_to: 70, instruction: "Put on eye protection and gloves" },
+  { seek_to: 89, instruction: "Time in high-risk zone" },
+  { seek_to: 120, instruction: "Take off gloves safely" },
+  { seek_to: 145, instruction: "Take off apron safely" },
+  { seek_to: 162, instruction: "Leave room safely" },
+  { seek_to: 168, instruction: "Take off eye protection safely" },
+  { seek_to: 180, instruction: "Clean eye protection" },
+  { seek_to: 187, instruction: "Remove face mask safely" },
+]
