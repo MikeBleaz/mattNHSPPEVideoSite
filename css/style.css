@@ -83,3 +83,11 @@ p {
   font-size: 170%;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 640px) {
+  #player {
+    margin-left: -15px;
+    width: 100vw;
+    height: calc(100vw * (9/16));
+  }
+}
