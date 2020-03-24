@@ -37,7 +37,10 @@
 
     <ol class="steps">
       {{#steps}}
-      <li>
+      
+      <li {{class?}}
+            class="{{class}}"
+          {{class/}}>
         <a href="#iframe" onclick="seekTo({{seek_to}});">{{instruction}}</a>
       </li>
       {{/steps}}
