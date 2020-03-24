@@ -1,6 +1,6 @@
 scenario_number: 1
 title: Hospital Ward, Safe Corridor, No multiple-occupancy bays on ward, no rooms with +ve pressure, all rooms with en-suite
-video_id: ItcvIYtEVrw
+video_id: bQlrV2IPNt0
 steps: [
   { seek_to: 25, instruction: "Wash hands" },
   { seek_to: 34, instruction: "Don a plastic apron" },
