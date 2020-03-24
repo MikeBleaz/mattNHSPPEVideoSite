@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Scenario Five: Out-Patient care</title>
+    <title>Scenario 5: Out-Patient care</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"  />
@@ -21,10 +21,10 @@
   <body>
 
     <h1>Scenario 5 Video:</h1>
-	  <h1>Out-Patient care</h1>
+	<h1>Out-Patient care</h1>
 
+    <a name="iframe"></a>
     <div class="col-sm-12 text-center">
-      <a name="iframe"></a>
       <div id="player"></div>
       <script>var videoId = 'C79M6khVxq4'</script>
       <script src="js/video.js"></script>
@@ -49,7 +49,7 @@
         <a href="#iframe" onclick="seekTo(70);">Put on eye protection and gloves</a>
       </li>
       <li>
-        <a href="#iframe" onclick="seekTo(89);">Time in high-risk area</a>
+        <a href="#iframe" onclick="seekTo(89);">Time in high-risk zone</a>
       </li>
       <li>
         <a href="#iframe" onclick="seekTo(120);">Take off gloves safely</a>
@@ -70,6 +70,17 @@
         <a href="#iframe" onclick="seekTo(187);">Remove face mask safely</a>
       </li>
     </ol>
+
+	<p>&nbsp;</p><p>&nbsp;<p>&nbsp;</p><div class="footer date-time-format">
+  <b class= "footer-checkbox steps"> 🗹 </b> this website has been checked as of <b class="date-time-format" id="date"></b> <b>by Dr Matt Butler, CUH NHS FT</b>  and remains reflective of the latest Public Health England (PHE) guidance with respect to Personal Protective Equipment (PPE)
+</div>
+
+</div>
+<script>
+var d = new Date();
+document.getElementById("date").innerHTML = d;
+</script>
+
 
 
   </body>
